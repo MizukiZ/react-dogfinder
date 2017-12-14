@@ -13,14 +13,8 @@ function Breed({ breeds }) {
           return (
             <Link to={`/breeds/${breed._id}`}>
               <Col xs={4}>
-                <Thumbnail
-                  src={breed.image}
-                  style={{
-                    height: "300px"
-                  }}
-                >
+                <Thumbnail src={breed.image} className="text-center">
                   <h3>{breed.name}</h3>
-                  <p>{breed.description}</p>
                 </Thumbnail>
               </Col>
             </Link>
