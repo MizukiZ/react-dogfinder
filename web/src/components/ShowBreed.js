@@ -14,7 +14,7 @@ function ShowBreed({
       {breeds.map(breed => {
         if (breed._id === id) {
           return (
-            <div className="container">
+            <div className="container text-center">
               <h1>{breed.name}</h1>
               <img src={breed.image} />
               <h3>description</h3>
